@@ -20,6 +20,12 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  #Using Spring Cloud Bus we can use http://localhost:8080/actuator/busrefresh to refesh all microservices pulgged in
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
 
 management:
   endpoint:
